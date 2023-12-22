@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/shows/:id" element={<ShowDetails />} />
+        <Route path="/shows/:id" element={<ShowDetails name="" summary="" language="" premiered="" image={{ medium: '', original: '' }} />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

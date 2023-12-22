@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
 
   return (
-    <div>
+    <div className="m-3" style={{ maxWidth: '640px' }}>
       <h1>Search for tv shows</h1>
       <SearchInput setSearchResults={setSearchResults} />
       {searchResults.length > 0 && <Autocomplete results={searchResults} />}

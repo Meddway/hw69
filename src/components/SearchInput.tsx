@@ -15,7 +15,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ setSearchResults }) => {
 
   const handleSearch = async (query: string) => {
     try {
-      const response = await axios.get<SearchResult[]>(`http://api.tvmaze.com/search/shows?q=${query}`);
+      const response = await axios.get<SearchResult[]>(`https://api.tvmaze.com/search/shows?q=${query}`);
       setSearchResults(response.data);
     } catch (error) {
       console.error('Error fetching search results:', error);

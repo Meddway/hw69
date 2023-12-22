@@ -9,10 +9,10 @@ interface AutocompleteProps {
 
 const Autocomplete: React.FC<AutocompleteProps> = ({ results }) => {
   return (
-    <div>
-      <ul>
+    <div className="container mt-4">
+      <ul className= "mt-3">
         {results.map((result) => (
-          <li key={result.show.id}>
+          <li key={result.show.id} className="list-group-item">
             <Link to={`/shows/${result.show.id}`}>{result.show.name}</Link>
           </li>
         ))}
