@@ -38,8 +38,8 @@ const ShowDetails: React.FC<ShowDetailsProps> = () => {
     <div>
       <h2>Name: {showDetails.name}</h2>
       <p>{showDetails.summary}</p>
-      <p>language: {showDetails.language}</p>
-      <p>premiered: {showDetails.premiered}</p>
+      <p>Language: {showDetails.language}</p>
+      <p>Premiered: {showDetails.premiered}</p>
       <img src={showDetails.image.medium} alt={showDetails.name}/>
     </div>
   );
